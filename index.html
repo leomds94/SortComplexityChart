@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <title>Sort and Charts</title>
+</head>
+
+<body>
+    <fieldset style="width: 500px;">
+        <legend font-size: 10pt>Quais gráficos deseja plotar?</legend>
+        <div class="[ form-group ]">
+            <input type="checkbox" name="insertion" id="insertion" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="insertion" class="[ btn btn-danger ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="insertion" class="[ btn btn-default active ]">
+                    Insertion Sort
+                </label>
+            </div>
+            <input type="checkbox" name="selection" id="selection" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="selection" class="[ btn btn-primary ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="selection" class="[ btn btn-default active ]">
+                    Selection Sort
+                </label>
+            </div></br></br>
+            <input type="checkbox" name="quick" id="quick" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="quick" class="[ btn btn-success ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="quick" class="[ btn btn-default active ]">
+                    Quick Sort
+                </label>
+            </div>
+            <!--<input type="checkbox" name="bubble" id="bubble" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="bubble" class="[ btn btn-info ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="bubble" class="[ btn btn-default active ]">
+                    Bubble Sort
+                </label>
+            </div>-->
+            <input type="checkbox" name="heap" id="heap" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="heap" class="[ btn btn-warning ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="heap" class="[ btn btn-default active ]">
+                    Heap Sort
+                </label>
+            </div></br></br>
+            <!--<input type="checkbox" name="merge" id="merge" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="merge" class="[ btn btn-danger ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="merge" class="[ btn btn-default active ]">
+                    Merge Sort
+                </label>
+            </div>
+        </div>-->
+        </br>
+        <span>N desejado:</span>
+        <input type="text" name="nvalue" id="nvalue"><br></br>
+        <input type="submit" value="Plotar" id="plotchart" />
+    </fieldset>
+
+
+    <div id="chart1" style="width: 480px; height: 400px;"/>
+
+        <div id="chart2" style="width: 480px; height: 400px;"/>
+
+        <script type="text/javascript" src="chart.js"></script>
+
+</body>
+
+</html>
